@@ -46,7 +46,7 @@ public class Main {
 
         System.out.println("\nЗадача 9");
         for (int i = 1; i <= 12 ; i++){
-            salary += salary/100;
+            salary += i == 1 ? 0 : salary/100;
             System.out.println("Месяц " + i + ", сумма накоплений равна "+ (salary * i) +" рублей");
         }
 
